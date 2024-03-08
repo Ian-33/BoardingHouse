@@ -1,0 +1,139 @@
+body {
+  margin: 0px;
+  background-image: url(MainBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+nav {
+  background: transparent;
+  backdrop-filter: blur(1px);
+  padding: 20px 12px;
+  
+}
+
+.Nav-container {
+  display: inline-block;
+}
+
+.Web-title {
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: -10px;
+  left: 15px;
+}
+
+.Orange {
+  color: #FFAC1C;
+  margin-right: 6px;
+}
+
+
+.Links-container {
+  float: right;
+  position: relative;
+  top: 10px;
+  margin-right: 18px;
+}
+
+.Link {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  transition: 0.6s;
+  border: none;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 10px 7px 5px 7px;
+  background-color: transparent;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+
+header {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(20, 20, 83);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.Text1 {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+
+section {
+    max-width: 810px;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(WoodBG.jpg);
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container1 {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.container2 {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.Section1 {
+    max-width: 500px;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Rules {
+  font-family: 'Raleway', sans-serif;
+}
+
+ol, p {
+  font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
