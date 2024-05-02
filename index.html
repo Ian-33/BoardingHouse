@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap">
+    <script src="https://kit.fontawesome.com/7060eadca6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="Nav-container">
+            <img src="House_icon.png" width="50px" height="50px"/>
+            <h2 class="Web-title">
+                <span class="Orange">Website</span>
+                <span class="auto-type" style="font-family: 'Raleway', sans-serif; font-weight: 600c;"></span>
+            </h2>
+        </div>
+        <div class="Links-container">
+            <button class="Link1" onclick="window.location.href='index.html'" style=" border-bottom: 3px solid white; font-size: 25px; color: #FFAC1C;"> Home </button>
+            <button class="Link" onclick="window.location.href='FAQpage.html'"> FAQ </button>
+            <button class="Link" onclick="window.location.href='Feedbackpage.html'"> Feedback </button>
+            <button class="Link" onclick="window.location.href='AboutUs.html'"> About </button>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <div class="Main-page">
+        <div class="Trans">
+            <h1 class="Title3">WELCOME TO HOUSE BOARDING RENTALS WEBSITE</h1>
+            <p class="Sub">Discover comfortable and unique <br> accommodation for your next stay</p>
+        </div>
+        <div class="direct-btn">
+            <br><br><br><br><br><br><br><br>
+            <div class="Border1">
+                <a class="Btn1" href="Option.html">CHECK IT OUT</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="Footer-content">
+            <div class="Footer-section">
+                <h2 class="Title-footer1">Contact Us</h2>
+                <p class="contact-text"><i class="fab fa-facebook"></i> Ian Vincent Ebron</p>
+                <p class="contact-text"><i class="far fa-envelope"></i> ianvincentebron@gmail.com</p>
+                <p class="contact-text" style="font-family: 'Raleway, sans-serif';"><i class="fas fa-phone"></i> +63 (09208833961)</p>
+            </div>
+            <div class="Footer-section">
+                <h2 class="Title-Footer2">Follow Us</h2>
+                <div class="Button5">
+                    <button class="button5" onclick="window.location.href='https://www.facebook.com/ianvincent.ebron.3?mibextid=ZbWKwL'" class="Social-icon">
+                        <i class="fa-brands fa-facebook fa-bounce" style="color: white"></i> Facebook 
+                    </button>
+                </div>
+                <div class="Button6">
+                    <button class="button6" onclick="window.location.href='https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2F_PATATAs_17%3Ft%3DPKhajwglZeIXH6Z_U41rig%26s%3D09%26fbclid%3DIwAR2eoH49h3vFgElj3S4c3hycYvvnXC2uFV_H3dDew5po6Kc6NDNwzBVEdeQ&h=AT3Aq0FBwuZVIXe-M5JsLlU3gzhbCAEYoXu2LYeFytn6sgSDLsyZedOfCT5im7zjvwvyuxs6xhwrcqSv20hvsSYy2_NOBut26VbQgvFrOVyK2dcYKBhF8VT8PZ9IE2EQTh4ztg'" class="Social-icon">
+                        <i class="fa-brands fa-x-twitter fa-bounce" style="color: #ffffff;"></i> Twitter 
+                    </button>
+                </div>
+                <div class="Button7">
+                    <button class="button7" onclick="window.location.href='https://www.tiktok.com/@mrfresh_cat?is_from_webapp=1&sender_device=pc'" class="Social-icon">
+                        <i class="fa-brands fa-tiktok fa-bounce" style="color: #ffffff;"></i> Tiktok 
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr style="margin: 25px 80px 20px 80px; border-top: 1px solid #FFAC1C; border-bottom: 1px solid #FFAC1C;">
+        <p class="copyright"> &copy; 2023 House boarding rentals website. All rights reserved.</p>
+    </footer> 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Prototype"],
+            typeSpeed : 100,
+            backSpeed : 100,
+            loop : true
+        });
+    </script>
+    <script>
+        // Function1
+        const rotateText = document.getElementById('rotate-text');
+        function checkOrientation() {
+            if (window.innerHeight > window.innerWidth) {
+                rotateText.style.display = 'block';
+            } else {
+                rotateText.style.display = 'none';
+            }
+        }
+        checkOrientation();
+        window.addEventListener('resize', checkOrientation);
+
+        // Function2
+        document.getElementById("options").addEventListener("change", function() {
+            var selectedOption = this.value;
+            switch(selectedOption) {
+                case "purok1":
+                    window.location.href = "purok1.html";
+                    break;
+                case "purok2":
+                    window.location.href = "purok2.html";
+                    break;
+                case "purok3":
+                    window.location.href = "Purok3.html";
+                    break;
+                case "purok4":
+                    window.location.href = "purok4.html";
+                    break;
+                case "purok5":
+                    window.location.href = "Purok5.html";
+                    break;
+                case "purok6":
+                    window.location.href = "purok6.html";
+                    break;
+                case "purok7":
+                    window.location.href = "purok7.html";
+                    break;
+                default:
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+body {
+  margin: 0px;
+  background-image: url(MainBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+nav {
+  background: transparent;
+  backdrop-filter: blur(1px);
+  padding: 20px 12px;
+  
+}
+
+.Nav-container {
+  display: inline-block;
+}
+
+.Web-title {
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: -10px;
+  left: 15px;
+}
+
+.Orange {
+  color: #FFAC1C;
+  margin-right: 6px;
+}
+
+.Links-container {
+  float: right;
+  position: relative;
+  top: 10px;
+  margin-right: 18px;
+}
+
+.Link {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  transition: 0.6s;
+  border: none;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 10px 7px 5px 7px;
+  background-color: transparent;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+
+.Link {
+  font-size: 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+.Link:hover {
+  color: grey;
+}
+
+header {
+background-color: rgb(20, 20, 83);
+color: #fff;
+text-align: center;
+padding: 1em 0;
+}
+
+.Header-text {
+color: white;
+font-family: 'Raleway', sans-serif;
+
+
+}
+
+  .image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    width: 50%; 
+    max-width: 500px;  
+    width: 100%;
+    height: 300px;
+ }
+ 
+  section {
+    max-width: 350px;
+    margin: 20px auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: white;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+h3 {
+  font-weight: 550;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 5px;
+  text-align: left;
+}
+
+h2 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  padding-left: 5px;
+  text-align: left;
+  margin-top: 0;
+  font-weight: 480;
+}
+
+li {
+  color: black;
+  padding-left: 5px;
+  text-align: left;
+  margin-top: 0;
+  font-weight: 480;
+}
+
+.Text1 {
+  margin-top: 5px;
+  padding-left: 5px;
+  margin-bottom: 0;
+  
+}
+
+.Text2 {
+  padding-left: 5px;
+  margin-bottom: 0;
+}
+
+.Text3 {
+  padding-left: 5px;
+  margin-bottom: 0;
+}
+
+.Text4{
+  color: black;
+  padding-left: 5px;
+  padding-top: 7px;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.Text5 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.Text6 {
+  margin-bottom: 0;
+}
+
+.Text7 {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+.bed {
+  margin-bottom: 0;
+}
+
+.image1 {
+  margin: 0;
+}
+
+.Details {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: 0;
+  background-image: url(WoodBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.Details-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-top: 0;
+  background-image: url(WoodBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.view-map-button {
+  background-color: #4caf50; 
+  color: white; 
+  padding: 10px 15px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
+}
+
+.view-map-button:hover {
+  background-color: #36843a; 
+}
+
+footer {
+  font-family: verdana;
+  background-image: url(WoodBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 1em 0;
+  margin-top: 35px;
+}
+
+.footer-title {
+  margin-top: 15px;
+  font-size: 18px;
+  color: black;
+  font-weight: 550;
+}

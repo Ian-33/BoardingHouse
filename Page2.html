@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Matilda - boarding house </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap">
+        <link rel="stylesheet" href="Style5.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                box-sizing: border-box;
+            }
+
+            .wrapper {
+                margin-top: 100px;
+                margin-bottom: 230px;
+                width: 100%;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                height: 340px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: start;
+                margin-bottom: 60px;
+            }
+
+            .wrapper1 {
+                margin-top: 50px;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 270px;
+            }
+
+
+            .container1 {
+                height: 340px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: start;
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 10px;
+            }
+
+            .card {
+                border: 3px solid rgb(188, 188, 188);
+                width: 80px;
+                height: 440px;
+                border-radius: .75rem;
+                background-size: cover;
+                cursor: pointer;
+                border-radius: 2rem;
+                overflow: hidden;
+                margin: 0 10px;
+                display: flex;
+                align-items: flex-end;
+                transition: .4s cubic-bezier(.28,-0.03,0,.99);
+            }
+
+            .container {    
+                padding: 35px 15px 35px 15px;
+                border-radius: 10px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .card > .row {
+                background: transparent;
+                backdrop-filter: blur(7px);
+                color: white;
+                display: flex;
+                flex-wrap: nowrap;
+                padding-top: -5px;
+            }
+
+            .card > .row > .icon {
+                background-color: rgb(225, 149, 19);
+                color: white;
+                border-radius: 50%;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 15px;
+            }
+
+            .card > .row > .description {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                overflow: hidden;
+                height: 80px;
+                width: 520px;
+                opacity: 0;
+                transform: translateY(30px);
+                transition-delay: .3s;
+                transition: all .3s ease;
+            }
+
+            .description p {
+                color: white;
+                padding-top: 5px;
+            }
+
+            .description h4 {
+                text-transform: uppercase;
+
+            }
+
+            input {
+                display: none;
+            }
+
+            input:checked + label {
+                width: 600px;
+            }
+
+            input:checked + label .description {
+                opacity: 1 !important;
+                transform: translateY(0) !important;
+            }
+
+            .card[for="c1"] {
+                background-image: url('purok5 Image1.jpg');
+            }
+
+            .card[for="c2"] {
+                background-image: url('purok5 Image2.jpg');
+            }
+
+            .card[for="c3"] {
+                background-image: url('purok5 Image3.jpg');
+            }
+
+            .card[for="c4"] {
+                background-image: url('purok5 Image4.jpg');
+            }
+
+            .description h4 {
+                color: #ffb330;
+                font-weight: 600;
+            }
+
+            .Back {
+        border: 2px solid #FFAC1C;
+        border-radius: 4px;
+        width: 80px;
+        padding: 4px 15px 4px 15px;
+        margin-left: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+        color: white;
+        background-color: #FFAC1C;
+      }
+
+      .back {
+        cursor: pointer;
+        
+      }
+
+           
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="Nav-container">
+                <img src="House_icon.png" width="50px" height="50px"/>
+                <h2 class="Web-title"> <span class="Orange">Website</span> <span class="auto-type" style="font-family: 'Raleway', sans-serif; font-weight: 600c;"></span> </h2>
+            </div>
+            <div class="Links-container">
+               <button class="Link-1" onclick="window.location.href='index.html'"> Home </button>
+               <button class="Link-2" onclick="window.location.href='FAQpage.html'"> FAQ </button>
+               <button class="Link-3" onclick="window.location.href='Feedbackpage.html'"> Feedback </button>
+               <button class="Link-4" onclick="window.location.href='AboutUs.html'"> About us </button>
+            </div>
+        </nav>
+        <div class="back">
+            <button class="Back" onclick="goBack()"> <i class="fa-solid fa-arrow-left"></i> </button>
+        </div>
+        <div class="box1-1">
+            <div class="wrapper">
+                <div class="container">
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card">
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description">
+                                <h4> living area </h4>
+                                <p> A room in a home that is used for relaxing, socializing, and often includes comfortable seating.
+                                </p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c2">
+                    <label for="c2" class="card">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description">
+                                <h4> dishwashing area </h4>
+                                <p>A space in the kitchen for washing dishes, with a sink and drying space.</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c3">
+                    <label for="c3" class="card">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description">
+                                <h4> bed room </h4>
+                                <p> A ccommodation unit characterised by its usage for sleeping.</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c4">
+                    <label for="c4" class="card">
+                        <div class="row">
+                            <div class="icon">4</div>
+                            <div class="description">
+                                <h4> Kitchen </h4>
+                                <p>Serves as the central space for cooking and food preparation.</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+<div class="Container-Box">
+  <div class="container2-1">
+    <div class="Box2-1">Click here to view Rules and Regulations</div>
+    <div class="Box2-2">Click here to view Location</div>
+    <div class="Box2-3">Click here to view Contact Details</div>
+  </div>
+</div>
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+    <h3 style="color: #17179c;">Rules and Regulations</h3>
+    <br>
+    <ol> 1. No bad habbits </ol>
+    <ol> 2. Quiet environment </ol>
+    <ol> 3. Cleanliness </ol>
+    <ol> 4. 09:00PM curfew </ol>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+    <h3  style="color: #17179c;">Location</h3>
+    <br>
+    <p> Barangay Silanga, Purok-5</p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+    <h3  style="color: #17179c;">Contact Detail</h3>
+    <br>
+    <P class="Fb"> <i class="fab fa-facebook" style="color: #0000d9;"></i> Conrad Udquin </P>
+    <button class="Btn-Text" onclick="window.location.href='https://www.facebook.com/messages/t/100082553230533/'"> <span class="icon"><i class="fa-brands fa-facebook-messenger fa-bounce"></i> </span><span class="messenger"> Messenger </span> </button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".auto-type",{
+    strings : ["Prototype"],
+    typeSpeed : 100,
+    backSpeed : 100,
+    loop : true
+  })
+  </script>
+
+<script>
+
+function goBack() {
+            window.history.back();
+         }
+
+var modal1 = document.getElementById("modal1");
+var modal2 = document.getElementById("modal2");
+var modal3 = document.getElementById("modal3");
+
+
+var box1 = document.querySelector(".Box2-1");
+var box2 = document.querySelector(".Box2-2");
+var box3 = document.querySelector(".Box2-3");
+
+
+var spans = document.querySelectorAll(".close");
+
+
+box1.addEventListener("click", function() {
+  modal1.style.display = "block";
+});
+
+box2.addEventListener("click", function() {
+  modal2.style.display = "block";
+});
+
+box3.addEventListener("click", function() {
+  modal3.style.display = "block";
+});
+
+
+spans.forEach(span => {
+  span.onclick = function() {
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+  }
+});
+
+
+window.onclick = function(event) {
+  if (event.target == modal1 || event.target == modal2 || event.target == modal3) {
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+  }
+}
+</script>
+    </body>
+</html>

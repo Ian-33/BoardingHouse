@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...">
+        <script src="https://kit.fontawesome.com/7060eadca6.js" crossorigin="anonymous"></script>
+        <title> Options </title>
+        <style> 
+
+body {
+    margin: 0px;
+    background-image: url(MainBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 176%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+nav {
+    background: transparent;
+    backdrop-filter: blur(1px);
+    padding: 20px 12px;
+    
+}
+
+.Nav-container {
+    display: inline-block;
+}
+
+.Web-title {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: -10px;
+    left: 15px;
+}
+
+.Orange {
+    color: #FFAC1C;
+    margin-right: 6px;
+}
+
+.Links-container {
+    float: right;
+    position: relative;
+    top: 10px;
+    margin-right: 18px;
+}
+
+.Link-1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    transition: 0.6s;
+    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 10px 7px 5px 7px;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.Link-2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    transition: 0.6s;
+    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 10px 7px 5px 7px;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.Link-3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    transition: 0.6s;
+    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 10px 7px 5px 7px;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.Link-4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    transition: 0.6s;
+    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 10px 7px 5px 7px;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+        section {
+            max-width: 290px;
+            margin: 20px auto;
+            margin-bottom: 350px;
+            padding-top: 5px;
+            padding-bottom: 120px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: 0 0 28px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+            background-color: white;
+           
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .Text1 {
+            margin-top: 7px;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .Text2 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .sub-head {
+            margin-top: -5px;
+            margin-bottom: -4px;
+            color: black;
+        }
+
+        .hr {
+            margin-bottom: -2px;
+            margin-top: -2px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown button {
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            background-color: #FFAC1C;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+            
+            
+        }
+
+        .dropdown button:hover {
+            border: 2px solid  #0000d9;
+        }
+
+        .dropdown-content {
+           display: none;
+           position: absolute;
+           background-color: white;
+           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+           z-index: 1;
+        }
+
+        .dropdown-content a {
+           color: black;
+           padding: 12px 16px;
+           text-decoration: none;
+           display: block;
+        }
+
+        .dropdown-content a:hover {
+           background-color: #0000d9;
+        }
+
+        .dropdown:hover .dropdown-content {
+           display: block;
+        }
+
+        .Input-Box2 {
+            margin-top: 10px;
+        }
+
+        .Select {
+            font-size: 17px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #0000d9;
+            color: white;
+            padding: 10px 30px 10px 30px;
+            border-radius: 7px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+            font-weight: 500;
+        }
+
+        .Box1 {
+            border: 2px solid  #0000d9;
+            padding: 2px 3px 2px 3px;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+            font-weight: 700;
+            transition: 0.1s;
+        }
+
+       .Link-1,.Link-2,.Link-3,.Link-4 {
+            transition: 0.3s;
+       }
+
+        .Link-1:hover {
+            color: #FFAC1C;
+            border-bottom: 3px solid white;
+            font-size: 25px;
+        }
+
+        .Link-2:hover {
+            color: #FFAC1C;
+            border-bottom: 3px solid white;
+            font-size: 25px;
+        }
+
+        .Link-3:hover {
+            color: #FFAC1C;
+            border-bottom: 3px solid white;
+            font-size: 25px;
+        }
+
+        .Link-4:hover {
+            color: #FFAC1C;
+            border-bottom: 3px solid white;
+            font-size: 25px;
+        }
+
+        .Back {
+        border: 2px solid #FFAC1C;
+        border-radius: 4px;
+        width: 80px;
+        padding: 4px 15px 4px 15px;
+        margin-left: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+        color: white;
+        background-color: #FFAC1C;
+      }
+
+      .back {
+        cursor: pointer;
+        
+      }
+
+       
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="Nav-container">
+                <img src="House_icon.png" width="50px" height="50px"/>
+                <h2 class="Web-title"> <span class="Orange">Website</span> <span class="auto-type" style="font-family: 'Raleway', sans-serif; font-weight: 600c;"></span> </h2>
+            </div>
+            <div class="Links-container">
+               <button class="Link-1" onclick="window.location.href='index.html'"> Home </button>
+               <button class="Link-2" onclick="window.location.href='FAQpage.html'"> FAQ </button>
+               <button class="Link-3" onclick="window.location.href='Feedbackpage.html'"> Feedback </button>
+               <button class="Link-4" onclick="window.location.href='AboutUs.html'"> About us </button>
+            </div>
+        </nav>
+        <div class="back">
+            <button class="Back" onclick="goBack()"> <i class="fa-solid fa-arrow-left"></i> </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+            <div class="Input-Box2">
+                <h2 style="color: black;"> Choices </h2>
+                <hr style="margin-top: -15px; margin-bottom: 25px;">
+                <label class="Select" for="options">1. Barangay Silanga</label>
+                <select class="Box1" id="options" onchange="redirectToPurok()">
+                    <option class="Purok" value="Purok 1">Purok 1</option>
+                    <option class="Purok" value="Purok 3">Purok 3</option>
+                    <option class="Purok" value="Purok 5">Purok 5</option>
+                    <option class="Purok" value="Purok 7">Purok 7</option>
+                </select>
+              </div>
+        </section>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type",{
+            strings : ["Prototype"],
+            typeSpeed : 100,
+            backSpeed : 100,
+            loop : true
+          })
+          </script>
+          
+        <script>
+            function goBack() {
+                       window.history.back();
+                    }
+
+            function redirectToPurok() {
+                var selectedPurok = document.getElementById("options").value;
+                if (selectedPurok === "Purok 1") {
+                    window.location.href = "Purok1.html";
+                } else if (selectedPurok === "Purok 2") {
+                    window.location.href = "#";
+                } else if (selectedPurok === "Purok 3") {
+                    window.location.href = "Purok3.html";
+                } else if (selectedPurok === "Purok 4") {
+                    window.location.href = "#";
+                } else if (selectedPurok === "Purok 5") {
+                    window.location.href = "Purok5.html";
+                } else if (selectedPurok === "Purok 6") {
+                    window.location.href = "#";
+                } else if (selectedPurok === "Purok 7") {
+                    window.location.href = "Purok7.html";
+                }
+            }
+        </script>
+    </body>
+</html>

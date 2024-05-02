@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...">
+    <script src="https://kit.fontawesome.com/7060eadca6.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+    margin: 0px;
+    background-image: url(MainBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 102%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+nav {
+    background: transparent;
+    backdrop-filter: blur(1px);
+    padding: 20px 12px;
+}
+
+.Nav-container {
+    display: inline-block;
+}
+
+.Web-title {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: -10px;
+    left: 15px;
+}
+
+.Orange {
+    color: #FFAC1C;
+    margin-right: 6px;
+}
+
+.Links-container {
+    float: right;
+    position: relative;
+    top: 10px;
+    margin-right: 18px;
+}
+
+.Link {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    transition: 0.6s;
+    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 10px 7px 5px 7px;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+        header {
+            background-color: rgb(20, 20, 83);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding-top: 15px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+
+        section.Profile-Member {
+           background-color: #fff2d7;
+        }
+
+        .Header-text {
+            color: white;
+
+        }
+
+        .Nav-Title {
+            font-family: 'roboto', sans-serif;
+            font-weight: 900;
+        }
+
+        h2 {
+            
+            font-weight: 900;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        p {
+            font-size: 20px;
+            color: white;
+            font-weight: lighter;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        li {
+            font-size: 20px;
+            font-weight: lighter;
+         
+        }
+
+        .team1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .team2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member i {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #4285f4;
+        }
+
+        .Name {
+            font-weight: 700;
+            
+        }
+
+        .name {
+            font-size: 17px;
+            font-weight: lighter;
+        }
+
+        footer {
+            font-family: 'Raleway', sans-serif;
+            background-image: url(WoodBG.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 1em 0;
+            
+        }
+
+        .footer-title, p {
+            color: black;
+            font-size: 18px;
+            font-weight: 550;
+        }
+
+        .Sub-Text {
+            color: white;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .Sub-Head {
+            font-size: 25px;
+        }
+
+        article {
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            padding: 1px 15px 5px 25px;
+            color: white;
+            background-color:  #FFAC1C;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .Back {
+        border: 2px solid #FFAC1C;
+        border-radius: 4px;
+        width: 80px;
+        padding: 4px 15px 4px 15px;
+        margin-left: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+        color: white;
+        background-color: #FFAC1C;
+      }
+
+      .back {
+        cursor: pointer;
+        
+      }
+
+    </style>
+    <title>About Us - House Boarding Rentals</title>
+</head>
+
+<body>
+    <nav>
+        <div class="Nav-container">
+            <img src="House_icon.png" width="50px" height="50"/>
+            <h2 class="Web-title"> <span class="Orange">Website</span><span class="auto-type" style="font-family: 'Raleway', sans-serif; font-weight: 600c;"></span></h2>
+        </div>
+        <div class="Links-container">
+              <button class="Link" onclick="window.location.href='index.html'"> Home </button>
+              <button class="Link" onclick="window.location.href='FAQpage.html'"> FAQ </button>
+              <button class="Link" onclick="window.location.href='Feedbackpage.html'"> Feedback </button>
+              <button class="Link" onclick="window.location.href='AboutUs.html'"  style="border-bottom: 3px solid white; font-size: 25px; color: #FFAC1C;"> About </button>
+        </div>
+    </nav>
+    
+    <div class="back">
+        <button class="Back" onclick="goBack()"> <i class="fa-solid fa-arrow-left"></i> </button>
+    </div>
+
+    <section>
+        <article>
+        <h1 class="Sub-Head">Welcome to our website</h1>
+        <p class="Sub-Text">We understand that finding the perfect boarding house is not just about renting a space, 
+         it's about discovering a home where you can thrive, connect, and create lasting memories.</p>
+        </article>
+
+        <article>
+        <h1 class="Sub-Head">Our Mission</h1>
+        <p class="Sub-Text">We are passionate about simplifying the process of finding ideal boarding house rentals. 
+          Whether you're a student searching for a comfortable study environment and welcoming space,
+          we've got you covered.</p>
+        </article>
+
+        <article>
+        <h1 class="Sub-Head">Our Vission</h1>
+        <p class="Sub-Text">We are dedicated to transform the way students experience boarding house rentals, 
+            creating a platform where finding the perfect study environment and welcoming space is effortless. 
+            We envision a future where every student feels empowered to thrive academically and socially through our simplified and inclusive rental process. 
+            We strive to cultivate a community where students feel connected, supported, and inspired to excel in their academic pursuits.</p>
+        </article>
+    
+        <article>
+        <h1 class="Sub-Head">Why Choose Our Website?</h1>
+         <li>User-Friendly Platform: Our website makes the search breeze</li>
+         <br>
+         <li>Detailed Website: Our website contain the details of what you need</li>
+          <br>
+          <li>Responsive Customer Support: Our dedicated customer support team 
+            is always ready to assist you</li>
+            <br>
+          <li> Continuous Improvement: We are committed to continuously 
+            improving our website and enhancing the user experience</li>
+          <br>
+          <br>
+        </article>
+
+        <article>
+         <p class="Sub-Text">Our website is more than just a platform, we're a team dedicated to develop and redefining 
+          the boarding house experience. Our research team is committed to providing you with a seamless and enjoyable 
+          journey as you embark on this new chapter</p>
+         <p class="Sub-Text">Join us in creating a space that goes beyond accommodation—it's about finding your 
+          home away from home.</p>
+         <P class="Sub-Text">Welcome to our website—where comfort, convenience, and community converge.</P>
+         </article>
+    </section>
+
+    <section class="Profile-Member" style="background-color: white; border-radius: 15px;">
+        <h1 style="color: #12129f;"> Developer and Members</h1>
+        <div class="team1">
+            <div class="team-member">
+                <i class="fas fa-user" style="color: #12129f;"></i>
+                <p class="Name" style="color: #12129f;">Ian Vincent Ebron</p>
+                <p  class="name" style="color: #12129f;"> Web Developer & Designer/Leader </p>
+            </div>
+
+            <div class="team-member">
+                <i class="fas fa-user" style="color: #12129f;"></i>
+                <p class="Name" style="color: #12129f;"> Cejay Abaigar </p>
+                <p  class="name" style="color: #12129f;"> Design Checker/Co-lead </p>
+                
+            </div>
+
+            <div class="team-member">
+                <i class="fas fa-user" style="color: #12129f;"></i>
+                <p class="Name" style="color: #12129f;">Kristin Jewel Cobero </p>
+                <p  class="name" style="color: #12129f;"> Design Checker/Member</p>
+            </div>
+            </div>
+            <div class="team2">
+            <div class="team-member">
+                <i class="fas fa-user" style="color: #12129f;"></i>
+                <p class="Name" style="color: #12129f;"> Eljay Kerstin Cobero </p>
+                <p class="name" style="color: #12129f;"> Design Checker/Member</p>
+            </div>
+
+            <div class="team-member">
+                <i class="fas fa-user" style="color: #12129f;"></i>
+                <p class="Name" style="color: #12129f;"> Erica Tafalla </p>
+                <p  class="name" style="color: #12129f;"> Design Checker/Member</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Prototype"],
+            typeSpeed : 100,
+            backSpeed : 100,
+            loop : true
+        });
+    </script>
+
+<script>
+      function goBack() {
+                       window.history.back();
+                    }
+</script>
+
+</body>
+
+</html>

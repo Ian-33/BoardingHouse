@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Style2.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
+        <title>Purok-3 </title>
+        <style>
+            body {
+            margin: 0px;
+            background-image: url(MainBG.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            background-attachment: fixed;
+            }
+
+           card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+           }
+
+           .card {
+            width: 325px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+            margin: 20px 20px 40px 20px;
+            overflow: hidden;
+           }
+
+           .hidden-content {
+            display: none;
+            transition: max-height 0.5s ease;
+          }
+
+          .show-more,.show-less {
+            cursor: pointer;
+            color: blue;
+          }
+
+           .card img {
+            width: 100%;
+            height: 250px;
+           }
+
+           .card-content {
+            padding: 0 16px 16px 16px;
+           }
+
+           .card-content h2{
+            font-size: 20px;
+            margin-bottom: -10px;
+           }
+
+           .card-content h3{
+            font-size: 20px;
+            margin-bottom: 6px;
+            font-family: 'Roboto', sans-serif;
+           }
+
+           .card-content h4{
+            margin-bottom: 5px;
+            margin-left: 5px;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+           }
+
+           .card-content p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1;
+            font-family: 'Roboto', sans-serif;
+           }
+
+           .card-content li {
+            color: #666;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+           }
+
+           .Back {
+        border: 2px solid #FFAC1C;
+        border-radius: 4px;
+        width: 80px;
+        padding: 4px 15px 4px 15px;
+        margin-left: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+        color: white;
+        background-color: #FFAC1C;
+      }
+
+      .back {
+        cursor: pointer;
+        
+      }
+
+      .img1 {
+        transition: 0.4s ;
+      }
+
+      .img1:hover {
+        opacity: 0.7;
+      }
+        </style>
+    </head>
+    <body>
+      <nav>
+        <div class="Nav-container">
+            <img src="House_icon.png" width="50px" height="50px"/>
+            <h2 class="Web-title"> <span class="Orange">Website</span> <span class="auto-type" style="font-family: 'Raleway', sans-serif; font-weight: 600c;"></span> </h2>
+        </div>
+        <div class="Links-container">
+           <button class="Link-1" onclick="window.location.href='index.html'"> Home </button>
+           <button class="Link-2" onclick="window.location.href='FAQpage.html'"> FAQ </button>
+           <button class="Link-3" onclick="window.location.href='Feedbackpage.html'"> Feedback </button>
+           <button class="Link-4" onclick="window.location.href='AboutUs.html'"> About us </button>
+        </div>
+    </nav>
+    <div class="back">
+      <button class="Back" onclick="goBack()"> <i class="fa-solid fa-arrow-left"></i> </button>
+  </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+          <div class="card-container">
+            <div class="card">
+              <a href="pagePurok1.html">
+                <img src="Exterior3.jpg" class="img1">
+              </a>
+                <div class="card-content">
+                    <h2 style="color: #0c0c82;"> Irens Iso Gruta </h2>
+                    <h4> Rent Detail </h4>
+                    <p> Rent Fee: ₱500 per month  <span class="show-more" onclick="toggleContent()" style="text-decoration: none; color: #3e3eff;">show more...</span> </p>
+                    <div class="hidden-content">
+                    <h4 style="margin-top: -5px;"> Other Details </h4>
+                    <p>
+                      Room: 5 <br>
+                      Beds: 10 <br>
+                      Services: Free water and electricity
+                      <p style="margin-top: -15px; margin-bottom: 10px;">Facilities: Kitchen, Living Area, Laundry, Comfort Rooms</p>
+                    </div>
+                    <button class="view-map-button" onclick="window.location.href='purok1 Map Page.html'" > <i class="fas fa-map-marked-alt"></i> View Map </button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <script>
+          function goBack() {
+            window.history.back();
+         }
+        </script>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type",{
+            strings : ["Prototype"],
+            typeSpeed : 100,
+            backSpeed : 100,
+            loop : true
+          })
+          </script>
+
+      <script>
+        function toggleContent() {
+          var hiddenContent = document.querySelector('.hidden-content');
+          var showBtn = document.querySelector('.show-more');
+        
+          if (hiddenContent.style.display === 'none') {
+            hiddenContent.style.display = 'block';
+            // Set max-height to trigger animation
+            hiddenContent.style.maxHeight = hiddenContent.scrollHeight + 'px';
+            showBtn.textContent = 'show less...';
+          } else {
+            // Set max-height to zero to trigger animation
+            hiddenContent.style.maxHeight = '0';
+            // Reset display to none after animation completes
+            setTimeout(function() {
+              hiddenContent.style.display = 'none';
+            }, 300); // Duration of the animation in milliseconds
+            showBtn.textContent = 'show more...';
+          }
+        }
+        </script>
+    </body> 
+</html>

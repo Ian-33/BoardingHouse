@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...">
+  <script src="https://kit.fontawesome.com/7060eadca6.js" crossorigin="anonymous"></script>
+    <style>
+     body {
+    margin: 0px;
+    background-image: url(MainBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 103%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+nav {
+    background: transparent;
+    backdrop-filter: blur(1px);
+    padding: 20px 12px;
+    
+}
+
+.Nav-container {
+    display: inline-block;
+}
+
+.Web-title {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: -10px;
+    left: 15px;
+}
+
+.Orange {
+    color: #FFAC1C;
+    margin-right: 6px;
+}
+
+.Links-container {
+    float: right;
+    position: relative;
+    top: 10px;
+    margin-right: 18px;
+}
+
+.Link {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    transition: 0.6s;
+    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 10px 7px 5px 7px;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+        header {
+            background-color: rgb(20, 20, 83);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            background-color: transparent;
+            border-radius: 8px;
+        }
+
+        .faq-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .faq-section2 {
+            background: transparent;
+
+            
+            text-align: center;
+        }
+
+        article {
+            border-left: 15px solid white;
+            border-radius: 8px;
+            background-color: #FFAC1C;
+            margin-bottom: 20px;
+            padding: 10px 15px 10px 15px;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-weight: 600;
+        }
+
+        P {
+            font-size: 20px;
+            font-weight: 550px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .Q {
+            font-size: 25px;
+        }
+
+        .Help {
+            font-family: 'raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        footer {
+            border-top: 3px solid #9a8369;
+            background-image: url(WoodBG.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: black;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            padding: 1em 0;
+            bottom: 0;
+            width: 100%;
+            font-weight: 550;
+        }
+
+        .footer-title {
+            font-size: 20px;
+        }
+
+        .help-btn {
+            display: flex;
+            align-items: center;
+            border: none;
+            backdrop-filter: none;
+            background: none;
+
+        }
+
+        .help-button {
+            margin: 0 auto;
+            display: inline-block;
+            padding: 15px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #23de29;
+            color: #fff;
+            border-radius: 6px;
+            margin-top: 50px;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        .help-button:hover {
+            background-color: #36843a;
+        }
+    
+      /*Question and Answer*/
+        .faq-question {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .faq-answer {
+      display: none;
+    }
+      /*Question and Answer*/
+
+      .Back {
+        border: 2px solid #FFAC1C;
+        border-radius: 4px;
+        width: 80px;
+        padding: 4px 15px 4px 15px;
+        margin-left: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+        color: white;
+        background-color: #FFAC1C;
+      }
+
+      .back {
+        cursor: pointer;
+        
+      }
+    </style>
+    <title>House Boarding Rentals - FAQ</title>
+</head>
+<body>
+    <nav>
+        <div class="Nav-container">
+            <img src="House_icon.png" width="50px" height="50"/>
+            <h2 class="Web-title"> <span class="Orange">Website</span> <span class="auto-type" style="font-family: 'Raleway', sans-serif; font-weight: 600c;"></span></h2>
+        </div>
+        <div class="Links-container">
+            <button class="Link" onclick="window.location.href='index.html'"> Home </button>
+            <button class="Link" onclick="window.location.href='FAQpage.html'" style="border-bottom: 3px solid white; font-size: 25px; color: #FFAC1C;"> FAQ </button>
+              <button class="Link" onclick="window.location.href='Feedbackpage.html'"> Feedback </button>
+              <button class="Link" onclick="window.location.href='AboutUs.html'"> About </button>
+        </div>
+    </nav>
+    <div class="back">
+        <button class="Back" onclick="goBack()"> <i class="fa-solid fa-arrow-left"></i> </button>
+    </div>
+    <section class="faq-section">
+        <article>
+            <div class="faq-question">
+            <h2 class="Q">
+                <h2>What types of houses are available for rent?&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></h2>
+            </div>
+            <div class="faq-answer">
+            <p class="A">We offer a variety of homes, including both affordable and high-end options.</p>
+            </div>
+        </article>
+
+        <article>
+            <div class="faq-question">
+            <h2 class="Q">Why is it only limited to Barangay Silanga?&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></h2>
+            </div>
+            <div class="faq-answer">
+            <p class="A">The scope of this website is currently limited to Barangay Silanga. If the website performs well or becomes successful, the research team plans to expand its scope to include other Barangays such as Barangay Iguid, Pupua, Payao, and others. </p>
+            </div>
+        </article>
+
+        <article>
+            <div class="faq-question">
+            <h2 class="Q">How do i seek a rental houses?&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></h2>
+            </div>
+            <div class="faq-answer">
+            <p class="A">By choosing an option, you can select which purok you prefer. </p>
+            </div>
+        </article>
+
+        <article>
+            <div class="faq-question">
+            <h2 class="Q">How are rental prices determined?&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i> </h2>
+            </div>
+            <div class="faq-answer">
+            <p class="A">Rental prices are determined by factors such as location, amenities, services, and the boarding house's environment</p>
+            </div>
+        </article>
+
+        <article>
+            <div class="faq-question">
+            <h2 class="Q">How do I report an issue during my stay?&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></h2>
+            </div>
+            <div class="faq-answer">
+            <p class="A">If you encounter any issues during your stay, please contact our customer support immediately using the 'Help' 
+                option at the bottom of this FAQ page, or you can also contact the landlord. You can find the landlord's contact information 
+                in the rent details we provide. We are committed to resolving your concerns as soon as possible </p>
+             </div>
+        </article>
+        <article class="help-btn">
+        <a href="mailto:ianvincentebron@gmail.com" class="help-button">
+            <span class="Help">Help</span>
+            <span class="icon"><i class="fas fa-headset"></i></span>
+          </a>
+        </article>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Prototype"],
+            typeSpeed : 100,
+            backSpeed : 100,
+            loop : true
+        });
+    </script>
+
+
+    <script>
+        
+        function goBack() {
+                       window.history.back();
+                    }
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var faqQuestions = document.querySelectorAll('.faq-question');
+    
+          faqQuestions.forEach(function(question) {
+            question.addEventListener('click', function() {
+              var answer = this.nextElementSibling;
+              if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+              } else {
+                answer.style.display = 'block';
+              }
+            });
+          });
+        });
+      </script>
+
+</body>
+</html>
